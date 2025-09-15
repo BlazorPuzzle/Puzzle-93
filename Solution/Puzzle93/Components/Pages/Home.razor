@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<PageTitle>Puzzle #93</PageTitle>
+
+<p>
+    This is a .NET 9 Blazor Web App with global server interactivity
+</p>
+<p>
+    We are binding to a component instantiated on the page.
+</p>
+<p>
+    The goal is to have two-way binding between the input field and the component.
+</p>
+<p>
+    When we change the message in the Home page, we want it to update in the component.
+</p>
+<p>
+    Also, when the component changes the message, we want to reflect that change in the home page.
+</p>
+<p>
+    This code looks like it should work, but it doesn't.
+</p>
+<p>
+    How can we fix it?
+</p>
+
+
+<h1>@Message</h1> 
+<br />
+<input @bind="Message" @bind:event="oninput" style="width:50%;"/>
+<br/>
+<br/>
+<MyComponent @bind-ParentMessage="Message" />
+
+@code
+{
+    private string Message { get; set; } = "Two-way bound message";
+}
