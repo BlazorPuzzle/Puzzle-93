@@ -1,7 +1,7 @@
 # Puzzle #93 - Two-Way Binding
 Carl and Jeff want to know how to implement two-way binding between a parent and child component.
 
-YouTube Video: https://youtu.be/
+YouTube Video: https://youtu.be/P6pMh2Gy35s
 
 Blazor Puzzle Home Page: https://blazorpuzzle.com
 

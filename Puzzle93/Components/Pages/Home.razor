@@ -30,7 +30,7 @@
 <input @bind="Message" @bind:event="oninput" style="width:50%;"/>
 <br/>
 <br/>
-<MyComponent ParentMessage="Message" />
+<MyComponent ParentMessage="@Message" />
 
 @code
 {
